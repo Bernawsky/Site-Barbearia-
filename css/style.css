@@ -99,26 +99,21 @@ nav ul a {
 .foto1 {
     zoom: 44%;
     z-index: 1;
-    position: relative;
     display: flex;
-    left: 4rem;
-    margin: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 .faixada {
-    width: 900px;
-    height: 1300px;
     display: grid;
-    justify-content: center;
-    justify-self: center;
-    position: relative;
-    background: #000;
+    align-items: end;
+    justify-content: start;
+    width: 900px;
+    height: 1350px;
+    background: #000000;
     z-index: 1;
-    top: -3rem;
-    right: 2rem;
-    left: -2rem;
-    margin: -3rem;
-    cursor: auto;
+    zoom: 80%;
 }
 
 .line1{
@@ -129,20 +124,13 @@ nav ul a {
     display: flex;
     position: relative;
     justify-content: center;
+    align-items: center;
     z-index: -1;
 }
 
-.logo2 {
-    justify-content: center;
-    user-select: none;
-    display: flex;
-    zoom: 84%;
-}
-
 .frase1 {
+    display: grid;
     position: relative;
-    display: flexbox;
-    align-items: center;
     color: #000;
     background: #fff;
     font-family: 'Agbalumo';
@@ -150,72 +138,63 @@ nav ul a {
     font-size: 60px;
     height: 150px;
     width: 560px;
-    left: 14vw;
-    top: 10vh;
     padding: 4px 85px;
     border: 2px solid #fff;
     border-radius: 12px;
 }
 
 .frase2 {
+    display: grid;
     position: relative;
-    display: flexbox;
-    color: #fff;
     text-align: center;
     width: 600px;
     height: 9px;
-    left: 13vw;
-    top: 13vh;
+    bottom: -4vh;
     font-size: 60px;
+    color: #fff;
     font-family: 'Noto Serif', serif;
 }
 
 .img-logo {
-    display: flex;
-    position: static;
-    justify-content: center;
-    align-items: center;
-    right: 30vh;
-    top: 17vh;
+    display: grid;
+    position: relative;
 }
 
 .line2 {
     position: relative;
-    top: 18vh;
+    top: 33vh;
     background-image: linear-gradient(90deg, #000 40%,#0070);
     width: 100%;
-    height: 600px;
+    height: 500px;
     padding: 25px;
     display: inline-block;
     justify-content: start;
 }
 
 .unidade {
-    zoom: 40%;
+    zoom: 30%;
     display: flex;
     position: relative;
-    bottom: 16vh;
-    left: 50vw;
-    width: 100px;
+    margin-left: 42vw;
+    top: 20vh;
+    width: 80px;
 }
 
 .text-unidade {
+    display: inline-block;
     position: relative;
-    display: inline-flex;
-    justify-self: center;
     color: #fff;
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'RICH THE BARBER PERSONAL USE', sans-serif;
-    left: 39vh;
-    width: 400px;
+    margin-left: 13vw;  
+    width: 100px;
 }
 
 ul li a {
     position: relative;
-    justify-content: left;
     display:  inline-flex;
-    top: 40vh;
-    left: 20vw;
+    top: 3vh;
+    margin-left: 13vw;
     width: 300px;
     color: #fff;
     text-decoration: none;
@@ -227,10 +206,10 @@ ul li a svg {
 }
 
 iframe {
-    display: flex;
+    display: inline-block;
     position: relative;
-    left: 58vw;
-    bottom: 37vh;
+    margin-left: 62vw;
+    bottom: 50vh;
     height: 300px;
     width: 300px;
     opacity: 50%;
@@ -244,25 +223,27 @@ iframe:hover {
 }
 
 .line3 {
-    display: block;
-    top: 20em;
+    display: grid;
+    position: relative;
+    grid-template-columns: 410px 410px 410px;
+    grid-template-rows: 100px 100px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    top: 10vh;
     width: 100%;
     height: 450px;
     background-color: #323232;
-    position: relative;
 }
 
 .agendamento-frase1 {
+    display: grid;
+    width: 400px;
+    height: 150px;
+    text-align: center;
     font-size: 28px;
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Fredericka the Great', serif;
-    width: 400px;
-    height: 150px;
-    display: flex;
-    text-align: center;
-    margin-left: 4em;
-    top: 2rem;
-    position: relative;
     color: #fff;
 }
 
@@ -339,11 +320,11 @@ div imput a svg {
 }
 
 .explication2 {
+    display: flex;
     font-size: 12px;
     font-family: 'Frank Ruhl Libre', serif;
     color: #ffffff;
     width: 450px;
-    display: flex;
     justify-content: center;
     text-align: left;
     position: relative;
@@ -354,6 +335,7 @@ div imput a svg {
 .button-more {
     position: relative;
     width: 280px;
+    height: 100%;
     padding: 20px 40px;
     bottom: 24vh;
     left: 47vw;
@@ -370,13 +352,13 @@ div imput a svg {
 }
 
 .phone {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    bottom: 14vh;
-    width: 200px;
-    height: 50px;
+    display: grid;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
     left: 80vw;
+    grid-template-rows: 400px;
     transition: transform 1s;
     transition: transform translateY(-2rem);
 }
@@ -386,30 +368,28 @@ div imput a svg {
 }
 
 .line4 {
-    background-color: #323232;
-    display: flex;
-    position: relative;
+    display: flexbox;
+    position: absolute;
+    justify-content: start;
     width: 800px;
     height: 400px;
-    left: 32vw;
-    top: 45vh;
+    background-color: #323232;
 }
 
 .margin-text {
-    background-color: #000;
-    display: grid;
-    position: static;
-    justify-content: center;
+    display: flex;
+    position: absolute;
+    justify-content: left;
     font-size: 30px;
     width: 350px;
     height: 400px;
-    right: 29vw;
+    background-color: #000;
 }
 
 .history1 {
     color: #757575;
     display: flex;
-    position: relative;
+    position: absolute;
     width: 229px;
     top: -0.7em;
     left: -1.3em;
@@ -419,13 +399,14 @@ div imput a svg {
 
 .history2 {
     color: red;
+    display: flex;
     position: absolute;
-    display: grid;
     text-align: left;
     width: 350px;
     font-size: 25px;
     padding: 20px;
     top: 3vh;
+    right: 4vw;
 }
 
 .button-history {
@@ -454,7 +435,7 @@ div imput a svg {
     position: relative;
     justify-content: left;
     width: 100%;
-    top: 60vh;
+    top: 55vh;
     height: 550px;
     background-image: linear-gradient(90deg, #323232 50%, transparent 80%);
 }
@@ -518,7 +499,7 @@ div imput a svg {
     position: relative;
     width: 100%;
     height: 300px;
-    top: 75vh;
+    top: 70vh;
     background: #000;
     user-select: none;
 }
@@ -536,7 +517,7 @@ div imput a svg {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 55vh;
+    top: 57vh;
     gap: 3em;
 }
 
@@ -576,7 +557,7 @@ div imput a svg {
     justify-content: start;    
     height: 38px;
     width: 100%;
-    top: 16vh;
+    top: 8vh;
     font-size: 10px;
     font-family: Sans-serif;
     color: #fff;
@@ -591,30 +572,127 @@ div imput a svg {
     z-index: 30;
 }
 
+@media screen and (max-width: 2400px) {
+    .line2 {
+        top: 25vh;
+    }
+
+    iframe {
+        bottom: 34vh;
+    }
+
+    .line4 {
+        top: 5vh;
+    }
+
+    .line-services {
+        top: 20vh;
+    }
+
+    .layout2 {
+        top: 33vh;
+    }
+
+    .menu-layout2 {
+        top: 19vh;
+    }
+
+    .copy-right {
+        top: 10vh;
+        left: 5vw;
+    }
+}
+
+@media screen and (max-width: 1700px) { 
+    iframe {
+        bottom: 40vh;
+    }
+
+}
+
 @media screen and (max-width: 1450px) { 
+    .line1 {
+        zoom: 70%;
+    }
+
+    .frase1 {
+        left: 10vw;
+    }
+
+    .frase2 {
+        left: 9vw;
+    }
+    
+    .img-logo {
+        left: -10vw;
+    }
+    
+    .line2 {
+        zoom: 70%;
+    }
+
+    iframe {
+        bottom: 45vh;
+    }
+    
+    .line4 {
+        left: 10vw;
+        top: -35vh;
+    }
+    
+    .line-services {
+        zoom: 80%;
+        top: -15vh;
+    }
+    
+    .layout2 {
+        zoom: 80%;
+        top: 5vh;
+    }
+    
+    .menu-layout2 {
+        top: -20vh;
+    }
+    
+    .copy-right {
+        top: 20vh;
+        left: 10vw;
+    }
+
     nav {
         right: 50px;
     }
 
-    .menu-layout2 {
-        display: flex;
-        position: relative;
-        top: 50vh;
-        left: 2vw;
-    }
-
-
 }
 
+
 @media screen and (max-width: 1166px) { 
+    
+    .line4 {
+        top: -17rem;
+        left: 15vw;
+        zoom: 85%;
+    }
+    
     .line-services {
-        display: flex;
-        position: relative;
-        justify-content: center;
+        top: -20vh;
+    }
+    
+    .services1 {
+        margin-left: -9%;
+    }
+    
+    .layout2 {
+        top: 0px
     }
 
-    .services1 {
-        margin-left: -29%;
+    .menu-layout2 {
+        top: -29vh;
+    }
+
+    .copy-right {
+        top: 21vh;
+        left: 10vh;
     }
 
     nav {
@@ -624,24 +702,19 @@ div imput a svg {
 }
 
 @media screen and (max-width: 1020px) {
+    iframe {
+        left: 30vw;
+    }
+
+
+    .line4 {
+        zoom: 75%;
+        top: 20vh;
+    }
+
     .line-services {
-        display: flex;
-        position: relative;
-        justify-content: center;
-    }
-
-    .services1 {
-        position: relative;
-        left: 25vw;
-        top: 5vh;
         zoom: 60%;
-    }
-
-    .services2 {
-        position: relative;
-        left: 15vw;
-        top: 26vh;
-        zoom: 60%;
+        top: 30vh;
     }
 
     .button-services {
@@ -653,6 +726,10 @@ div imput a svg {
         border: 3px solid #000000;
     }
     
+    .layout2 {
+        top: 45vh;
+    }
+
     .logo2 {
         display: flex;
         position: relative;
@@ -661,7 +738,7 @@ div imput a svg {
     }
 
     .menu-layout2 {
-        top: 52.5vh;
+        top: 20vh;
     }
 
     nav {
@@ -670,32 +747,68 @@ div imput a svg {
         bottom: 6vh;
     }
 
+    .copy-right {
+        top: 20vh;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    ul li a {
+        width: 240px;
+        margin-bottom: 2vh;
+    }
+
+    iframe {
+        left: 30vw;
+        bottom: 70vh;
+        height: 180px;
+        width: 180px;
+    }
+
+    .line4 {
+        zoom: 65%;
+        left: 30vw;
+    }
 }
 
 @media screen and (max-width: 680px) {
-    .services1 {
-        position: relative;
-        left: 45vh;
+    .line4 {
+        zoom: 55%;
+        top: -30vh;
+        left: 25vw;
     }
 
-    .button-services {
-        display: flex;
-        position: relative;
-        zoom: 60%;
-        left: 2vw;
-        border: 4px solid #000000;
+    .line-services {
+        top: -10vh;
+        zoom: 50%;
+    }
+
+    .layout2 {
+        top: 15vh;
+    }
+    
+    .menu-layout2 {
+        top: -10vh;
     }
 
     .logo2 {
         display: flex;
         position: relative;
-        top: 30vh;
+        top: 20vh;
         left: 97vw;
     }
 
     nav {
-        position: absolute;
-        right: 23vw;
+        width: 270px;
+        margin-left: 35vh;
     }
 
+    .copy-right {
+        top: 16vh;
+        left: 3vw;
+    }
 }
+
+
+
+/*SERVICES*/

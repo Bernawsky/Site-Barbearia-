@@ -1,0 +1,387 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #323232;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.layout1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66%;
+}
+
+.logo1 img {
+    width: 200px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    width: 80%;
+}
+
+
+.menu nav a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+    margin-right: 40px;
+} 
+
+.menu nav a:hover{
+    color: #aaaaaa;
+}
+
+.menu nav a::after{
+    position: absolute;
+    content: " ";
+    width: 0px;
+    height: 3px;
+    top: 19px;
+    left: 0;
+    margin: auto;
+    background-color: #ffa500;
+    transition: width 0.2s;
+}
+
+.menu nav a:hover::after{
+    width: 40px;
+}
+
+.redes-center {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+    height: 100%;
+    margin: 20px;
+}
+
+.redes-center ul a i{
+    margin-right: 20px;
+    font-size: 35px;
+    color: #ffffff;
+    transition: color 0.2s;
+}
+
+.redes-center nav{
+    display: flex;
+}
+
+.redes-center ul a i:hover{
+    color: #aaaaaa;
+}
+
+.contato {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 30;
+}
+
+.color-fundo{
+    width: 85%;
+    height: 6082px;
+    background-color: #ffa500;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.titulo {
+    position: relative;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 600px;
+    margin-left: 10%;
+    z-index: 100;
+    
+    h1 {
+        width: max-content;
+        color: #ffffff;
+    }
+    
+    p {
+        width: auto;
+        background-color: RGBA(0 ,0 ,0 , 0.0);
+        padding: 0px;
+        color: #000000;
+    }
+}
+
+.tabela-de-produtos {
+    position: relative;
+    top: 10vh;
+    width: 80%;
+    height: max-content;
+    background-color: #303030;
+    border-radius: 0px 20px 0px 0px;
+}
+
+h1 {
+    width: auto;
+    color: #ffa500;
+}
+
+p {
+    width: 500px;
+    height: min-content;
+    padding: 10px;
+    color: #ffffff;
+    background-color: RGBA(0 ,0 ,0 , 0.12);
+    border-radius: 5px;
+}
+
+.img-shave {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.fundo-shave {
+    display: grid;
+    position: relative;
+    align-items: center;
+    margin-right: auto;
+    top: 20px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: none;
+}
+
+.pomada-fixadora {
+    padding: 20px 0px 20px 60px;
+}
+
+.fundo-pomada-fixadora {
+    display: grid;
+    margin-left: auto;
+    align-items: center;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: none;
+}   
+
+.img-pomada-fixadora {
+    display: flex;
+    justify-content: start;
+}
+
+.fundo-baboon-grooming {
+    display: grid;
+    position: relative;
+    align-items: center;
+    margin-right: auto;
+    top: 20px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: none;
+}
+
+.img-baboon-grooming {
+    display: flex;
+    justify-content: end;
+}
+
+.fundo-pomada-matte {
+    display: grid;
+    margin-left: auto;
+    align-items: center;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: none;
+}
+
+.pomada-matte {
+    padding: 20px 0px 20px 60px;
+}
+
+.fundo-shampoo {
+    display: grid;
+    position: relative;
+    align-items: center;
+    margin-right: auto;
+    top: 20px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: none;
+}
+
+.img-shampoo {
+    display: flex;
+    justify-content: end;
+}
+
+.fundo-pomada-po {
+    display: grid;
+    margin-left: auto;
+    align-items: center;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: none;
+}
+
+.pomada-po {
+    padding: 20px 0px 20px 60px;
+}
+
+.fundo-hair-spray {
+    display: grid;
+    position: relative;
+    align-items: center;
+    margin-right: auto;
+    top: 20px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: none;
+}
+
+.img-hair-spray {
+    display: flex;
+    justify-content: end;
+}
+
+.fundo-balm {
+    display: grid;
+    margin-left: auto;
+    align-items: center;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: none;
+}
+
+.balm {
+    padding: 20px 0px 20px 60px;
+}
+
+.fundo-volume-control {
+    display: grid;
+    position: relative;
+    align-items: center;
+    margin-right: auto;
+    top: 20px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: none;
+}
+
+.img-volume-control {
+    display: flex;
+    justify-content: end;
+}
+
+.fundo-oleo-barba {
+    display: grid;
+    margin-left: auto;
+    align-items: center;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: none;
+}
+
+.oleo-barba {
+    padding: 20px 0px 20px 60px;
+}
+
+.fundo-pomada-cemment {
+    display: grid;
+    position: relative;
+    align-items: center;
+    margin-right: auto;
+    top: 20px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: none;
+}
+
+.img-pomada-cemment {
+    display: flex;
+    width: 110%;
+    justify-content: end;
+}
+
+.fundo-pentear {
+    display: grid;
+    margin-left: auto;
+    align-items: center;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: none;
+}
+
+.pentear {
+    padding: 20px 0px 20px 60px;
+}
+
+.fundo-skin-protection {
+    display: grid;
+    position: relative;
+    align-items: center;
+    margin-right: auto;
+    top: 20px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: none;
+}
+
+.img-skin-protection {
+    display: flex;
+    width: 105%;
+    justify-content: end;
+}
+
+.fundo-tonic-baboon {
+    display: grid;
+    margin-left: auto;
+    align-items: center;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: none;
+}
+
+.tonic-baboon {
+    padding: 20px 0px 20px 60px;
+}
+
+.fundo-condicionador {
+    display: grid;
+    position: relative;
+    align-items: center;
+    margin-right: auto;
+    top: 20px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: none;
+}
+
+.img-condicionador {
+    display: flex;
+    width: 104%;
+    justify-content: end;
+}
+
+.fundo-creme-men {
+    display: grid;
+    margin-left: auto;
+    align-items: center;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: none;
+}
+
+.creme-men {
+    padding: 20px 0px 20px 60px;
+}
+
+footer {
+    position: relative;
+    top: 2px;
+    height: 110px;
+    border-top: 2px solid #ffffff;
+}
